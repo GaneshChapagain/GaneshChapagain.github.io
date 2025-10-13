@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh Chapagain | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- THEME TOGGLE -->
+  <div id="theme-toggle">
+    <span id="mode-icon">🌙</span>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-left">
+        <h2>Hi all, I'm</h2>
+        <h1>Ganesh <span>Chapagain</span></h1>
+        <p>IT Professional | Technical Support Engineer | Cloud & Infrastructure Specialist</p>
+
+        <!-- Social Icons -->
+        <div class="hero-icons">
+          <a href="https://www.linkedin.com/in/ganeshchapagain/" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn" class="social-img" />
+          </a>
+          <a href="https://github.com/GaneshChapagain" target="_blank">
+            <img src="icons/github.png" alt="GitHub" class="social-img" />
+          </a>
+          <a href="mailto:cchapagain.ganu12@gmail.com">
+            <img src="icons/email.png" alt="Email" class="social-img" />
+          </a>
+        </div>
+
+        <div class="hero-gap" style="margin-top: 20px;"></div>
+
+        <!-- ✅ Custom GIF with blending -->
+        <img src="ganesh.gif" alt="Ganesh Tech GIF" class="hero-gif" />
+      </div>
+
+      <div class="hero-right">
+        <h3>Explore My Work</h3>
+        <button onclick="scrollToSection('experience')">Work Experience</button>
+        <button onclick="scrollToSection('certifications')">Certifications</button>
+        <button onclick="scrollToSection('skills')">Skills</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <section id="about">
+    <h2>Professional Summary</h2>
+    <p>
+      Experienced and results-driven professional with a proven track record in desktop support, Intune, Azure AD, networking,
+      server administration, and Microsoft Office 365 administration. Adept at collaborating within teams to deliver exceptional IT solutions.
+      Excels in providing top-notch customer service and ensuring seamless IT operations.
+    </p>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <i class="fas fa-network-wired"></i>
+        <h4>CCNA</h4>
+        <p>Cisco Certified Network Associate</p>
+      </div>
+      <div class="cert-card">
+        <i class="fab fa-microsoft"></i>
+        <h4>AZ-900</h4>
+        <p>Microsoft Azure Fundamentals</p>
+      </div>
+      <div class="cert-card">
+        <i class="fab fa-microsoft"></i>
+        <h4>MS-900</h4>
+        <p>Microsoft 365 Fundamentals</p>
+      </div>
+      <div class="cert-card">
+        <i class="fas fa-shield-alt"></i>
+        <h4>Fortinet NSE 3</h4>
+        <p>Network Security Expert Level 3</p>
+      </div>
+      <div class="cert-card">
+        <i class="fab fa-microsoft"></i>
+        <h4>Azure Administrator</h4>
+        <p>Ongoing Certification</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Microsoft Endpoint Manager (Intune)</div>
+      <div class="skill-card">Azure AD & Entra ID</div>
+      <div class="skill-card">FortiGate Firewall</div>
+      <div class="skill-card">Windows Server (2012–2019)</div>
+      <div class="skill-card">Microsoft 365 Admin & Security</div>
+      <div class="skill-card">Routing & Switching (VLAN, OSPF, BGP)</div>
+      <div class="skill-card">VMware & Citrix Virtualization</div>
+      <div class="skill-card">Network Monitoring (Wireshark, SolarWinds)</div>
+      <div class="skill-card">PowerShell Automation</div>
+      <div class="skill-card">Terraform & AWS (EC2, RDS, S3)</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Technical Support Engineer – NOW Finance</h3>
+      <p><em>July 2025 - Present</em></p>
+      <p>Provide Level 1 & 2 technical support, manage Intune deployments, monitor Azure Entra, and automate workflows with PowerShell.</p>
+    </div>
+    <div class="card">
+      <h3>Desktop Support Analyst – Bank of Queensland</h3>
+      <p><em>Feb 2023 - July 2025</em></p>
+      <p>Supported O365, Teams, Intune, and managed onboarding/offboarding of users.</p>
+    </div>
+    <div class="card">
+      <h3>Systems Engineer – Jasco Consulting</h3>
+      <p><em>Sept 2021 - Feb 2023</em></p>
+      <p>Managed Intune, VMware, Office 365, SCCM, and security solutions.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Bachelor of Information Technology</h3>
+      <p><strong>Melbourne Polytechnic, Preston (2018–2021)</strong></p>
+      <p><em>Key Subjects:</em> Network Design, Security, Project Management, Penetration Testing.</p>
+    </div>
+    <div class="card">
+      <h3>Higher Secondary Education (Year 12)</h3>
+      <p><strong>New Horizon College, Butwal, Nepal (2015–2017)</strong></p>
+      <p><em>Subjects:</em> Physics, Chemistry, Mathematics, English</p>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required />
+      <input type="email" name="reply_to" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="response"></p>
+  </section>
+
+  <!-- REACH OUT -->
+  <section id="reach">
+    <h2>Reach Out to Me!</h2>
+    <div class="reach-container">
+      <img src="headshot.jpg" alt="Ganesh Chapagain" class="reach-photo" />
+      <div class="reach-text">
+        <p>Think I am a good fit for your team or just want to say hi? My inbox is open for all.</p>
+        <h4>Technical Support Engineer</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Melbourne, Victoria, Australia</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 | Built with ❤️ by Ganesh Chapagain! </p>
+  </footer>
+
+  <!-- EMAILJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){ emailjs.init("YOUR_PUBLIC_KEY_HERE"); })();
+  </script>
+
+</body>
+</html>
